@@ -218,13 +218,13 @@ def menu():
 	print (S + '[☆] ' + G + 'ID Name: ' + S + a['name'])
 	print (S + '[☆] ' + G + 'User ID: ' + R + a['id'])
 	print
-	print (S + 50*'✵')
+	print (S + 48*'✵')
 	print
 	print (S + '[' + G + '1' + S + ']' + S + ' Crack Menu')
 	print (S + '[' + R + '2' + S + ']' + P + ' Log Out')
 	print (S + '[' + R + '0' + S + ']' + G + ' Exit')
 	print
-	print (S + 50*'✵')
+	print (S + 48*'✵')
 	print
 	mafia()
 
@@ -257,12 +257,12 @@ def pakistan():
 		trb()
 		t()
 		login()
-	cb()
+	love()
 	print (logo3)
 	print (S + '[' + G + '1' + S + ']' + S + ' Crack From Public Account')
 	print (S + '[' + R + '0' + S + ']' + R + ' Back')
 	print
-	print (S + 50*'✵')
+	print (S + 48*'✵')
 	print
 	black()
 
@@ -297,7 +297,7 @@ def black():
 	print (S + '[☆]' + G + ' Total Friends: ' + W + str(len(id)))
 	psb(S + '[☆]' + P + ' To stop process 1st click on CTRL then Z')
 	print
-	print (S + 50*'✵')
+	print (S + 48*'✵')
 	print
 	def main(arg):
 		global Error, live
@@ -386,7 +386,7 @@ def black():
 	p=ThreadPool(30)
 	p.map(main, id)
 	print
-	print(S+50*'✵')
+	print(S+48*'✵')
 	print
 	print(S+'Process has been completed')
 	print(S+'Total '+G+'OK'+S+'/'+R+'CP'+S+' = '+G+str(len(live))+S+'/'+R+str(len(Error)))

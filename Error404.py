@@ -146,8 +146,9 @@ def login():
 	except (KeyError,IOError):
 		love()
 		print (logo1)
+                print (S + 46*'✵')
 		print (S + '          ✵' + P + ' LOGIN WITH FACEBOOK ' + S + '✵')
-		print
+		print (S + 46*'✵')
 		id=raw_input(S + '[☆] ' + G + 'Number/ID: ' + W +'')
 		pwd=getpass.getpass(S + '[☆] ' + G + 'Password : ')
 		data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(id)+"&locale=en_US&password="+(pwd)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
@@ -195,7 +196,6 @@ def menu():
         print (S + 46*'✵')
 	print (S + '[☆] ' + G + 'ID Name: ' + S + a['name'])
 	print (S + '[☆] ' + G + 'User ID: ' + R + a['id'])
-	print
 	print (S + 46*'✵')
 	print (S + '[' + G + '1' + S + ']' + S + ' Crack Menu')
 	print (S + '[' + R + '2' + S + ']' + P + ' Log Out')
@@ -253,6 +253,7 @@ def black():
 		idt=raw_input(S + '[☆] ' + G + 'Public Frendlist ID: ' + W + '')
 		love()
 		print (logo3)
+                print (S + 46*'✵')
 		try:
 			jok=requests.get('https://graph.facebook.com/'+idt+'?access_token='+tb)
 			op=json.loads(jok.text)

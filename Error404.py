@@ -218,7 +218,7 @@ def menu():
 	print (S + '[☆] ' + G + 'ID Name: ' + S + a['name'])
 	print (S + '[☆] ' + G + 'User ID: ' + R + a['id'])
 	print
-	print (S + 50*'-')
+	print (S + 50*'✵')
 	print
 	print (S + '[' + G + '1' + S + ']' + S + ' Crack Menu')
 	print (S + '[' + R + '2' + S + ']' + P + ' Log Out')
@@ -226,7 +226,7 @@ def menu():
 	print
 	print (S + 50*'✵')
 	print
-	mb()
+	mafia()
 
 
 def mafia():

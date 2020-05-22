@@ -362,7 +362,8 @@ def black():
 	p.map(main, id)
 	print(S+46*'✵')
 	print(S+'Process has been completed')
-	print(S+'Total '+G+'OK'+S+'/'+R+'CP'+S+' = '+G+str(len(oks))+S+'/'+R+str(len(cps)))print(P+'Please copy all data from screen')
+	print(S+'Total '+G+'OK'+S+'/'+R+'CP'+S+' = '+G+str(len(oks))+S+'/'+R+str(len(cps)))
+        print(P+'Please copy all data from screen')
 	raw_input(R + 'Back')
 	os.system('Error404.py')
 if __name__=='__main__':

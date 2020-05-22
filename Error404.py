@@ -192,6 +192,7 @@ def menu():
 		exb()
 	love()
 	print (logo2)
+        print (S + 46*'✵')
 	print (S + '[☆] ' + G + 'ID Name: ' + S + a['name'])
 	print (S + '[☆] ' + G + 'User ID: ' + R + a['id'])
 	print
@@ -234,6 +235,7 @@ def pakistan():
 		login()
 	love()
 	print (logo3)
+        print (S + 46*'✵')
 	print (S + '[' + G + '1' + S + ']' + S + ' Crack From Public Account')
 	print (S + '[' + R + '0' + S + ']' + R + ' Back')
 	print (S + 46*'✵')
@@ -247,7 +249,8 @@ def black():
 	elif bp=='1':
 		love()
 		print (logo3)
-		idt=raw_input(S + '[☆] ' + G + 'Put Public User ID/User Name: ' + W + '')
+                print (S + 46*'✵')
+		idt=raw_input(S + '[☆] ' + G + 'Public Frendlist ID: ' + W + '')
 		love()
 		print (logo3)
 		try:
@@ -272,7 +275,7 @@ def black():
 	print
 	print (S + 46*'✵')
 	def main(arg):
-		global Error, live
+		global error, live
 		user=arg
 		try:
 			h=requests.get('https://graph.facebook.com/'+user+'/?access_token='+tb)

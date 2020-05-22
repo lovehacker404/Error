@@ -137,6 +137,7 @@ live=[]
 error=[]
 id=[]
 oks=[]
+cps=[]
 
 #### login ####
 def login():
@@ -363,7 +364,7 @@ def black():
 	p.map(main, id)
 	print(S+46*'✵')
 	print(S+'Process has been completed')
-	print(S+'Total '+G+'live'+S+'/'+R+'Error'+S+' = '+G+str(len(oks))+S+'/'+R+str(checkpoint)))
+	print(S+'Total '+G+'live'+S+'/'+R+'Error'+S+' = '+G+str(len(oks))+S+'/'+R+str(cps)))
 	print(P+'Please copy all data from screen')
 	raw_input(R + 'Back')
 	os.system('Error404.py')

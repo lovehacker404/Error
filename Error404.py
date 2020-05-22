@@ -273,7 +273,6 @@ def black():
 		pb()
 	print (S + '[☆]' + G + ' Total Friends: ' + W + str(len(id)))
 	hacker(S + '[☆]' + P + ' To stop process 1st click on CTRL then Z')
-	print (R +           ' Cloning Start Plz Wi8')
 	print (S + 46*'✵')
 	def main(arg):
 		global error, live

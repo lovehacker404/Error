@@ -235,7 +235,7 @@ def mafia():
 		print (R + 'Select a valid option !')
 		mafia()
 	elif bm =='1':
-		pak()
+		pakistan()
 	elif bm =='2':
 		hacker('Token Has Been Removed')
 		trb()

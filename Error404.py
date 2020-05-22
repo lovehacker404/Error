@@ -213,7 +213,7 @@ def menu():
 		print (R + 'No internet connection !')
 		t()
 		exb()
-	cb()
+	love()
 	print (logo2)
 	print (S + '[☆] ' + G + 'ID Name: ' + S + a['name'])
 	print (S + '[☆] ' + G + 'User ID: ' + R + a['id'])

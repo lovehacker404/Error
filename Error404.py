@@ -218,11 +218,11 @@ def menu():
 	print (S + '[☆] ' + G + 'ID Name: ' + S + a['name'])
 	print (S + '[☆] ' + G + 'User ID: ' + R + a['id'])
 	print
-	print (S + 48*'✵')
+	print (S + 46*'✵')
 	print (S + '[' + G + '1' + S + ']' + S + ' Crack Menu')
 	print (S + '[' + R + '2' + S + ']' + P + ' Log Out')
 	print (S + '[' + R + '0' + S + ']' + G + ' Exit')
-	print (S + 48*'✵')
+	print (S + 46*'✵')
 	print
 	mafia()
 
@@ -291,7 +291,7 @@ def black():
 		print (R + ' Select a valid option !')
 		pb()
 	print (S + '[☆]' + G + ' Total Friends: ' + W + str(len(id)))
-	psb(S + '[☆]' + P + ' To stop process 1st click on CTRL then Z')
+	hacker(S + '[☆]' + P + ' To stop process 1st click on CTRL then Z')
 	print
 	print (S + 46*'✵')
 	def main(arg):

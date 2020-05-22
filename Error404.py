@@ -169,7 +169,7 @@ def login():
 	except (KeyError,IOError):
 		love()
 		print (logo1)
-		print (S + '          ☆' + P + ' LOGIN WITH FACEBOOK ' + S + '☆')
+		print (S + '          ✵' + P + ' LOGIN WITH FACEBOOK ' + S + '✵')
 		print
 		id=raw_input(S + '[☆] ' + G + 'Number/ID: ' + W +'')
 		pwd=getpass.getpass(S + '[☆] ' + G + 'Password : ')
@@ -219,11 +219,9 @@ def menu():
 	print (S + '[☆] ' + G + 'User ID: ' + R + a['id'])
 	print
 	print (S + 48*'✵')
-	print
 	print (S + '[' + G + '1' + S + ']' + S + ' Crack Menu')
 	print (S + '[' + R + '2' + S + ']' + P + ' Log Out')
 	print (S + '[' + R + '0' + S + ']' + G + ' Exit')
-	print
 	print (S + 48*'✵')
 	print
 	mafia()
@@ -261,9 +259,7 @@ def pakistan():
 	print (logo3)
 	print (S + '[' + G + '1' + S + ']' + S + ' Crack From Public Account')
 	print (S + '[' + R + '0' + S + ']' + R + ' Back')
-	print
-	print (S + 48*'✵')
-	print
+	print (S + 46*'✵')
 	black()
 
 def black():
@@ -273,7 +269,7 @@ def black():
 		pb()
 	elif bp=='1':
 		love()
-		print (logo)
+		print (logo3)
 		idt=raw_input(S + '[☆] ' + G + 'Put Public User ID/User Name: ' + W + '')
 		love()
 		print (logo3)
@@ -297,8 +293,7 @@ def black():
 	print (S + '[☆]' + G + ' Total Friends: ' + W + str(len(id)))
 	psb(S + '[☆]' + P + ' To stop process 1st click on CTRL then Z')
 	print
-	print (S + 48*'✵')
-	print
+	print (S + 46*'✵')
 	def main(arg):
 		global Error, live
 		user=arg
@@ -385,13 +380,10 @@ def black():
 			pass
 	p=ThreadPool(30)
 	p.map(main, id)
-	print
-	print(S+48*'✵')
-	print
+	print(S+46*'✵')
 	print(S+'Process has been completed')
 	print(S+'Total '+G+'OK'+S+'/'+R+'CP'+S+' = '+G+str(len(live))+S+'/'+R+str(len(Error)))
 	print(P+'Please copy all data from screen')
-	print
 	raw_input(R + 'Back')
 	os.system('Error404.py')
 if __name__=='__main__':

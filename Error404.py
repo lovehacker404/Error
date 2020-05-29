@@ -242,13 +242,17 @@ def pilih():
 		pilih()
 
 def available_facebook_motah():
+        global toket
+	os.system('clear')
 	try:
-		amerr = str(raw_input('WhoAmi exploits('available_facebook_motah') > '))
-		if  amerr[:10] == "set nomber" or  amerr[:10] == "set NOMBER" :
-			nomber[0] = amerr[11:]
-	print "NOMBER => ", nomber[0]
-	available_facebook_motah()
-	elif amerr[:12] == "show options":
+		toket=open('login.txt','r').read()
+	except IOError:
+		print"\x1b[1;94mToken invalid"
+		os.system('rm -rf login.txt')
+		time.sleep(1)
+		login()
+	os.system('clear')
+	print logo
 	print ""
         print ""
         print"    options (available_facebook_motah):" 

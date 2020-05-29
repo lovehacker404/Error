@@ -266,7 +266,7 @@ def available_facebook_motah():
  os.system('clear')
 try:
 		toket=open('login.txt','r').read()
-		except IOError:
+except IOError:
 		os.system('clear')
 		print"\x1b[1;94mToken invalid"
 		os.system('rm -rf login.txt')
@@ -277,13 +277,13 @@ try:
 		a = json.loads(otw.text)
 		nama = a['name']
 		id = a['id']
-		except KeyError:
+except KeyError:
 		os.system('clear')
 		print"\033[1;97mYour Account is on Checkpoint"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
 		login()
-		except requests.exceptions.ConnectionError:
+except requests.exceptions.ConnectionError:
 		print"\x1b[1;94mThere is no internet connection"
 		keluar()
    print "logo"

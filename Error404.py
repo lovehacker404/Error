@@ -297,11 +297,11 @@ def available_facebook_motah():
                         elif "https://web.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=100" in log :
                                 print ""
 			else :
-                        print y,"--------------------------------"
-                        print g,"[*]email ---------> ",g,go
-                        print g,"[*]pass ---------> ",g,go
-                        print y,"--------------------------------"
-                        menu()
+				print y,"--------------------------------"
+                                print g,"[*]email ---------> ",g,go
+                                print g,"[*]pass ---------> ",g,go
+                                print y,"--------------------------------"
+                                menu()
      
 def super():
 	global toket

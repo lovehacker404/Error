@@ -218,8 +218,8 @@ def menu():
 	print "	   \033[1;97m Name\033[1;97m:\033[1;94m"+nama+"\033[1;97m               "
 	print "	   \033[1;97m ID\033[1;97m:\033[1;94m"+id+"\x1b[1;97m              "
 	print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•\033[1;94mBlackMafia\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•"
-	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m1.\x1b[1;94mStart Cloning..."
-	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m2.\x1b[1;94mStart US Cloning..."
+	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m1.\x1b[1;94mStart Cloning US..."
+	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m2.\x1b[1;94mStart Cloning..."
         print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m0.\033[1;97mlogout            "
 	pilih()
 
@@ -230,9 +230,9 @@ def pilih():
 		print "\x1b[1;97mFill in correctly"
 		pilih()
 	elif unikers =="1":
-		super()
-	elif unikers =="2":
 		available_facebook_motah()
+	elif unikers =="2":
+		black()
 	elif unikers =="0":
 		jalan('Token Removed')
 		os.system('rm -rf login.txt')
@@ -301,9 +301,8 @@ def available_facebook_motah():
                                 print g,"[*]email ---------> ",g,go
                                 print g,"[*]pass ---------> ",g,go
                                 print y,"--------------------------------"
-                                menu()
-     
-def super():
+                                pilih()
+def black():
 	global toket
 	os.system('clear')
 	try:

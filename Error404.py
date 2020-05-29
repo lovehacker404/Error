@@ -243,7 +243,7 @@ def pilih():
 
 def available_facebook_motah():
 	try:
-		amerr = str(raw_input(default+'WhoAmi exploits('red+'available_facebook_motah'+default+') > '))
+		amerr = str(raw_input('WhoAmi exploits('available_facebook_motah') > '))
 		if  amerr[:10] == "set nomber" or  amerr[:10] == "set NOMBER" :
 			nomber[0] = amerr[11:]
 	print "NOMBER => ", nomber[0]

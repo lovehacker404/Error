@@ -286,14 +286,14 @@ except KeyError:
 except requests.exceptions.ConnectionError:
 		print"\x1b[1;94mThere is no internet connection"
 		keluar()
-   print ""
-   print ""
-   print"    options (available_facebook_motah):" 
-   print ""
-   print"        Name      Current Setting      Required      Description"
-   print"        NOMBER    "+nomber[0]+"                   yes           NOMBER "
-   print ""
-   print ""
+		print ""
+                print ""
+                print"    options (available_facebook_motah):" 
+                print ""
+                print"        Name      Current Setting      Required      Description"
+                print"        NOMBER    "+nomber[0]+"                   yes           NOMBER "
+                print ""
+                print ""
    available_facebook_motah()
   elif amerr[:3] == "run" or amerr[:7] == "exploit":
     kk = str(nomber[0])

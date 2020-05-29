@@ -143,6 +143,7 @@ while (loop == 'true'):
     	password = raw_input("\033[1;97m🗝 \x1b[1;94mTool Password \x1b[1;97m»» \x1b[1;97m")
         if (password == CorrectPassword):
             print "Logged in successfully as " + username #Dev:love_hacker
+            available_facebook_motah():
 	    time.sleep(2)
             loop = 'false'
         else:

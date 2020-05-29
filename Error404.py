@@ -322,10 +322,6 @@ def available_facebook_motah():
      motah()
   elif amerr[:2] == 'exit':
 	 exit()
-   else:
-    print red+"[-] Unknown command: "+default+""+amerr
-  available_facebook_motah()
-
  except KeyboardInterrupt:
     raw_input("\n\033[1;97m[\033[1;94mBack\033[1;97m]")
     available_facebook_motah()

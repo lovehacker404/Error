@@ -262,8 +262,6 @@ def available_facebook_motah():
         print ""
         print ""
 	available_facebook_motah()
-	elif amerr[:3] == "run" or amerr[:7] == "exploit":
-		kk = str(nomber[0])
         print "[*]"+default+"starting cracking"
         print ""
 	def menu():

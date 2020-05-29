@@ -190,8 +190,6 @@ def motah():
        print g,"[*]pass ---------> ",g,go
        print y,"--------------------------------"
      motah()
-  elif amerr[:2] == 'exit':
-	 exit()
  except KeyboardInterrupt:
     raw_input("\n\033[1;97m[\033[1;94mBack\033[1;97m]")
     if __name__ == '__main__':

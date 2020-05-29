@@ -291,11 +291,11 @@ def available_facebook_motah():
                         log = sub.geturl()
                         print b,"[*]Check===> ",r,go
                         if "https://www.facebook.com/checkpoint/?next" in log :
-                        print g,"[*]good ---------> ",c,go
+				print g,"[*]good ---------> ",c,go
                         elif "https://www.facebook.com/login.php" and "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=100" in log :
-                          print ""
+                                print ""
                         elif "https://web.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=100" in log :
-                          print ""
+                                print ""
 			else :
                         print y,"--------------------------------"
                         print g,"[*]email ---------> ",g,go

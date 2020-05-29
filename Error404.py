@@ -244,7 +244,7 @@ def menu():
 	print "	   \033[1;97m ID\033[1;97m:\033[1;94m"+id+"\x1b[1;97m              "
 	print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•\033[1;94mBlackMafia\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•"
 	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m1.\x1b[1;94mStart USA Cloning..."
-    print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m0.\033[1;97mlogout            "
+        print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m0.\033[1;97mlogout            "
 	pilih()
 def pilih():
 	unikers = raw_input("\n\033[1;94mChoose an Option>>> \033[1;97m")

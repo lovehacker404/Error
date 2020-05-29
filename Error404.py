@@ -302,10 +302,8 @@ def available_facebook_motah():
                                 print g,"[*]pass ---------> ",g,go
                                 print y,"--------------------------------"
                                 pilih()
-
-	
-	raw_input("\n\033[1;97m[\033[1;94mBack\033[1;97m]")
-	menu()
+				raw_input("\n\033[1;97m[\033[1;94mBack\033[1;97m]")
+				menu()
 
 if __name__ == '__main__':
 	login()

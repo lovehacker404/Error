@@ -286,7 +286,7 @@ except KeyError:
 except requests.exceptions.ConnectionError:
 		print"\x1b[1;94mThere is no internet connection"
 		keluar()
-   print "logo"
+   print ""
    print ""
    print"    options (available_facebook_motah):" 
    print ""

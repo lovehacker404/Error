@@ -215,6 +215,5 @@ def available_facebook_motah():
 	 exit()
  except KeyboardInterrupt:
     raw_input("\n\033[1;97m[\033[1;94mBack\033[1;97m]")
-    available_facebook_motah()
     if __name__ == '__main__':
     	main()

@@ -191,5 +191,5 @@ def motah():
        print y,"--------------------------------"
      motah()
 raw_input("\n\033[1;97m[\033[1;94mBack\033[1;97m]")
-    if __name__ == '__main__':
-    	main()
+if __name__ == '__main__':
+	main()

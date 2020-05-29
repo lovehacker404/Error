@@ -263,14 +263,30 @@ def pilih():
 		pilih()
 
 def available_facebook_motah():
- try:
-  amerr = str(raw_input(default+'WhoAmi exploits('red+'available_facebook_motah'+default+') > '))
-  if  amerr[:10] == "set nomber" or  amerr[:10] == "set NOMBER" :
-     nomber[0] = amerr[11:]
-     print "NOMBER => ", nomber[0]
-     available_facebook_motah()
-  elif amerr[:12] == "show options":
-   print ""
+ os.system('clear')
+	try:
+		toket=open('login.txt','r').read()
+	except IOError:
+		os.system('clear')
+		print"\x1b[1;94mToken invalid"
+		os.system('rm -rf login.txt')
+		time.sleep(1)
+		login()
+	try:
+		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
+		a = json.loads(otw.text)
+		nama = a['name']
+		id = a['id']
+	except KeyError:
+		os.system('clear')
+		print"\033[1;97mYour Account is on Checkpoint"
+		os.system('rm -rf login.txt')
+		time.sleep(1)
+		login()
+	except requests.exceptions.ConnectionError:
+		print"\x1b[1;94mThere is no internet connection"
+		keluar()
+   print "logo"
    print ""
    print"    options (available_facebook_motah):" 
    print ""

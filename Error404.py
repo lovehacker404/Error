@@ -143,7 +143,6 @@ while (loop == 'true'):
     	password = raw_input("\033[1;97m🗝 \x1b[1;94mTool Password \x1b[1;97m»» \x1b[1;97m")
         if (password == CorrectPassword):
             print "Logged in successfully as " + username #Dev:love_hacker
-            available_facebook_motah():
 	    time.sleep(2)
             loop = 'false'
         else:
@@ -153,28 +152,7 @@ while (loop == 'true'):
         print "\033[1;94mWrong Username"
         os.system('xdg-open https://m.youtube.com/channel/UCRrRgcJjsnNm5Bi5ZenRGnw')
 
-def available_facebook_motah():
- try:
-  amerr = str(raw_input(default+'WhoAmi exploits('+red+'available_facebook_motah'+default+') > '))
-  if  amerr[:10] == "set nomber" or  amerr[:10] == "set NOMBER" :
-     nomber[0] = amerr[11:]
-     print "NOMBER => ", nomber[0]
-     available_facebook_motah()
-  elif amerr[:12] == "show options":
-   print ""
-   print ""
-   print"    options (available_facebook_motah):" 
-   print ""
-   print"        Name      Current Setting      Required      Description"
-   print"        NOMBER    "+nomber[0]+"                   yes           NOMBER "
-   print ""
-   print ""
-   available_facebook_motah()
-  elif amerr[:3] == "run" or amerr[:7] == "exploit":
-    kk = str(nomber[0])
-    print blue +"[*]"+default+"starting cracking"
-    print ""
-    def motah():
+def motah():
      
      #email = str(raw_input("email"))
      email = str(random.randint(11111111,99999999))

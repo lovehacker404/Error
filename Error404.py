@@ -294,12 +294,12 @@ except requests.exceptions.ConnectionError:
                 print"        NOMBER    "+nomber[0]+"                   yes           NOMBER "
                 print ""
                 print ""
-   available_facebook_motah()
-  elif amerr[:3] == "run" or amerr[:7] == "exploit":
-    kk = str(nomber[0])
-    print "[*]"+default+"starting cracking"
-    print ""
-    def motah():
+		available_facebook_motah()
+		elif amerr[:3] == "run" or amerr[:7] == "exploit":
+			kk = str(nomber[0])
+			print "[*]"+default+"starting cracking"
+			print ""
+			def motah():
      
 def motah():
      

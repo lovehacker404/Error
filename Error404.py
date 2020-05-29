@@ -323,7 +323,7 @@ def available_facebook_motah():
   elif amerr[:2] == 'exit':
 	 exit()
   else:
-   elif amerr == [:1] =='cloning':
+   elif amerr[:1] =='cloning':
     available_facebook_motah()
    else:
     print red+"[-] Unknown command: "+default+""+amerr

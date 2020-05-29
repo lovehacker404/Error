@@ -264,7 +264,7 @@ def pilih():
 
 def available_facebook_motah():
  os.system('clear')
-	try:
+try:
 		toket=open('login.txt','r').read()
 	except IOError:
 		os.system('clear')
@@ -272,7 +272,7 @@ def available_facebook_motah():
 		os.system('rm -rf login.txt')
 		time.sleep(1)
 		login()
-	try:
+try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
 		a = json.loads(otw.text)
 		nama = a['name']

@@ -304,6 +304,5 @@ def available_facebook_motah():
                                 pilih()
 				raw_input("\n\033[1;97m[\033[1;94mBack\033[1;97m]")
 				menu()
-
-if __name__ == '__main__':
-	login()
+				if __name__ == '__main__':
+					login()
